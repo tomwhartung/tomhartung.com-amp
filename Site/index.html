@@ -6,6 +6,28 @@
     <title>Hello, AMPs</title>
     <link rel="canonical" href="http://example.ampproject.org/article-metadata.html">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <style amp-custom>
+      /* Styles copied from: https://www.ampproject.org/docs/design/responsive_amp#add-styles-to-a-page */
+      body {
+        background-color: #F0F0FF;
+      }
+      amp-img {
+        border: 5px solid black;
+      }
+
+      amp-img.grey-placeholder {
+        background-color: grey;
+      }
+      /* Put custom styles here: */
+      body {
+        font-color: black;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+		h1, h2, h3 {
+         margin: .2em;
+         padding: .2em;
+      }
+    </style>
     <script type="application/ld+json">
       {
         "@context": "http://schema.org",
