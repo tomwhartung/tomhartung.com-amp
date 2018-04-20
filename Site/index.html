@@ -25,8 +25,13 @@
         font-family: Arial, Helvetica, sans-serif;
       }
       h1, h2, h3 {
-         margin: .2em;
-         padding: .2em;
+        margin: .2em;
+        padding: .2em;
+      }
+      .amp-img,
+      ul, li, p {
+        margin: .5em 2em 0 2em;
+        padding: .5em 2em 0 2em;
       }
     </style>
     <script type="application/ld+json">
@@ -45,11 +50,19 @@
   <body>
     <h1>Welcome to TomHartung.com</h1>
     <p>Hi, I'm Tom!  Welcome to my simple site!</p>
-    <amp-img src="images/Tom_Hartung-headshot-color.jpg" alt="A Nice Portrait of Tom H." height="403" width="302"></amp-img>
+    <div class="amp-img">
+      <amp-img src="images/Tom_Hartung-headshot-color.jpg" alt="A Nice Portrait of Tom H." height="403" width="302"></amp-img>
+    </div><!-- .amp-img -->
     <p>This is a very simple site I am using for experimenting with new technology.</p>
     <p>Right now, I'm experimenting with Google's <a href='https://www.ampproject.org/' title='Link to the Home page at www.ampproject.org' target='_blank'>Accelerated Mobile Pages</a> (AMP) project.</p>
+    <h1>Go Away!</h1>
+    <p>Check out my other sites!</p>
+    <ul>
+    <li> </li>
+	 </ul>
+    <p> </p>
     <h1>Nothing to Hack Here!</h1>
-	 <p>This used to be a Drupal site, but I replaced it with this minimal static site because Drupal is not a good choice for people who want something minimal, and <q>something minimal</q> is all I have time for these days.</p>
+    <p>This used to be a Drupal site, but I replaced it with this minimal static site because Drupal is not a good choice for people who want something minimal, and <q>something minimal</q> is all I have time for these days.</p>
     <p>Sorry, nothing to hack here!  Move along, hackers, move along!!</p>
     <p> </p>
   </body>
