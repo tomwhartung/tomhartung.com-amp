@@ -56,7 +56,14 @@
   <body>
     <h1>Hi, I'm Tom!</h1>
     <div class="amp-img">
-      <amp-img src="images/Tom_Hartung-headshot-color.jpg" alt="A Nice Portrait of Tom H." height="403" width="302"></amp-img>
+      <amp-img
+        src="images/Tom_Hartung-headshot-color-864x1152.jpg" alt="A Nice Portrait of Tom H."
+        height="403" width="302"
+        srcset="images/Tom_Hartung-headshot-color-576x768.jpg 576w,
+                images/Tom_Hartung-headshot-color-432x576.jpg 432w,
+                images/Tom_Hartung-headshot-color-216x288.jpg 216w"
+        sizes="(min-width: 216px) 50vw, 80vw">
+      </amp-img>
     </div><!-- .amp-img -->
     <p>You can contact me:</p>
     <ul>
