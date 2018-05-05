@@ -50,8 +50,17 @@
         margin: .3em 2em 0 2em;
         padding: 0 0 0 .3em;
       }
-      .social-share-icon {
-        margin: .5em .2em 0 0;
+      /* Style all font awesome icons */
+      .fa {
+        font-size: 30px;
+        height: 22px;
+        width: 30px;
+        padding: .2em;
+        text-align: center;
+        text-decoration: none;
+      }
+      .fa:hover {
+        opacity: 0.7;
       }
       footer {
         background-color: #C0C0CF;
@@ -75,6 +84,8 @@
     </script>
     <script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <!-- Add social media icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
     <h1>Hi, I'm Tom!</h1>
@@ -91,35 +102,23 @@
     </div><!-- .amp-img -->
     <p><b>And I'm an expert in visualizing personalities!</b></p>
     <h3>Contact:</h3>
+    <p>For business-type stuff,
+     <a href="" title="Link to my page at linkedin.com" target="_blank">LinkedIn</a> or the
+     <a href="tel:+13038631757">phone</a> is your best bet.
+       For social-type stuff, try call....
+    </p>
     <ul>
      <li><b>Social media:</b><br />
-      <a href="https://www.linkedin.com/in/tomhartung" title="My page on linkedin" target="_blank">
-       <amp-social-share type="linkedin" width="30" height="22" class="social-share-icon">
-       </amp-social-share>
+      <a class="fa fa-github" href="https://github.com/tomwhartung" title="Link to my page on github" target="_blank">
       </a>
-      <a href="https://plus.google.com/u/0/+TomHartung" title="My G+ page" target="_blank">
-       <amp-social-share type="gplus" width="30" height="22" class="social-share-icon">
-       </amp-social-share>
+      <a class="fa fa-linkedin" href="https://www.linkedin.com/in/tomhartung" title="Link to my page on linkedin" target="_blank">
       </a>
-      <a href="https://www.facebook.com/tomwhartung" title="My facebook page" target="_blank">
-       <amp-social-share type="facebook" width="30" height="22" class="social-share-icon">
-       </amp-social-share>
-      </a>
-      <a href="https://twitter.com/TomWHartung" title="My page on twitter" target="_blank">
-       <amp-social-share type="twitter" width="30" height="22" class="social-share-icon">
-       </amp-social-share>
-      </a>
-      <br />Hmmmm:
-      <a href="https://www.linkedin.com/in/tomhartung" title="My page on linkedin" target="_blank">
-       <amp-social-share type="linkedin" width="30" height="22" class="social-share-icon"
-        data-param-text="My page on linkedin"
-        data-param-url="https://www.linkedin.com/in/tomhartung">
-       </amp-social-share>
+      <a class="fa fa-facebook-official" href="https://www.facebook.com/tomwhartung" title="Link to my facebook page" target="_blank">
       </a>
      </li>
-	  <li><b>Phone:</b><br /><a href="tel:+13038631757">+1-303-863-1757</a><br />
+     <li><b>Phone:</b><br /><a href="tel:+13038631757">+1-303-863-1757</a><br />
       Leave a message and I'll get back to you &mdash; I get a ton of junk calls.</li>
-	  <li><b>Address:</b><address><a href="https://maps.google.com/maps?q=2075+Emerson+Street,+Denver+CO+80205" title="Link to bring up a map to my house in a new window" target="_blank">2075 Emerson Street,<br />Denver CO 80205</a></address></li>
+     <li><b>Address:</b><address><a href="https://maps.google.com/maps?q=2075+Emerson+Street,+Denver+CO+80205" title="Link to bring up a map to my house in a new window" target="_blank">2075 Emerson Street,<br />Denver CO 80205</a></address></li>
     </ul>
     <p></p>
     <h3>Other Sites:</h3>
