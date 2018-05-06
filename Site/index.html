@@ -1,190 +1,190 @@
 <!doctype html>
 <html amp lang="en">
-  <head>
-    <meta charset="utf-8">
-    <script async src="https://cdn.ampproject.org/v0.js"></script>
-    <title>TomHartung.com</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="canonical" href="https://www.tomhartung.com/index.html">
-    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-    <style amp-custom>
-      /* Styles copied from: https://www.ampproject.org/docs/design/responsive_amp#add-styles-to-a-page */
-      body {
-        background-color: #F0F0FF;
-      }
-      amp-img {
-        background-color: gray;
-        border: 3px solid black;
-      }
+<head>
+ <meta charset="utf-8">
+ <script async src="https://cdn.ampproject.org/v0.js"></script>
+ <title>TomHartung.com</title>
+ <link rel="icon" href="favicon.ico" type="image/x-icon">
+ <link rel="canonical" href="https://www.tomhartung.com/index.html">
+ <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+ <style amp-custom>
+  /* Styles copied from: https://www.ampproject.org/docs/design/responsive_amp#add-styles-to-a-page */
+  body {
+   background-color: #F0F0FF;
+  }
+  amp-img {
+   background-color: gray;
+   border: 3px solid black;
+  }
 
-      amp-img.grey-placeholder {
-        background-color: grey;
-      }
-      /* Put custom styles here: */
-      body {
-        color: #0F0000;
-        font-family: Arial, Helvetica, sans-serif;
-        margin: 2em 4em 2em 3em;
-        padding: 2em 4em 2em 3em;
-      }
-      h1, h2, h3 {
-        margin: .5em .2em 0 .2em;
-        padding: .5em .2em 0 .2em;
-      }
-      .amp-img {
-        margin: .5em 2em 0 2em;
-        padding: .5em 2em 0 2em;
-      }
-      p {
-        line-height: 1.5em;
-        margin: .5em 2em 0 0;
-        padding: 0 0 0 .6em;
-      }
-      ul {
-        list-style-type: circle;
-        margin: 0;
-        padding: 0;
-      }
-      li {
-        line-height: 1.5em;
-        margin: .3em 2em 0 2em;
-        padding: 0 0 0 .3em;
-      }
-      /* Style all font awesome icons */
-      .fa {
-        padding: .2em;
-        text-align: center;
-        text-decoration: none;
-      }
-      .fa:hover {
-        border-radius: 50%;
-        box-shadow: 0px 0px 5px #000;
-        opacity: 0.7;
-      }
-      .fa-github-square {
-        color: black;
-      }
-      .fa-linkedin-square {
-        color: #0275b5;
-      }
-      .fa-medium {
-        color: black;
-      }
-      .fa-facebook-square {
-        color: #3B5998;
-      }
-      .fa-google-plus-square {
-        color: #DD4B39
-      }
-      .fa-twitter-square {
-        color: #55ACEE;
-      }
-      #fa-github-square, #fa-linkedin-square, #fa-medium,
-      #fa-facebook-square, #fa-google-plus-square, #fa-twitter-square {
-        font-size: 2em;
-      }
-      blockquote {
-        font-size: 1.5em;
-        font-style: italic;
-        line-height: 1.5em;
-        margin: 1.5em 4em 1.5em 4em;
-      }
-      footer {
-        background-color: #C0C0CF;
-        border-radius: 25px;
-        color: #0F0000;
-        margin: 2em .2em 2em .2em;
-        padding: 2em .2em 2em .2em;
-        text-align: center;
-      }
-    </style>
-    <script type="application/ld+json">
-      {
-        "@context": "http://schema.org",
-        "@type": "NewsArticle",
-        "headline": "Open-source framework for publishing content",
-        "datePublished": "2015-10-07T12:02:41Z",
-        "image": [
-          "logo.jpg"
-        ]
-      }
-    </script>
-    <script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
-    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
-    <!-- Add social media icon library -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  </head>
-  <body>
-    <h1>Hi, I'm Tom!</h1>
-    <div class="amp-img">
-      <amp-img
-        src="images/Tom_Hartung-headshot-bw-864x1152.jpg" alt="A Nice Portrait of Tom H. wearing a blue shirt."
-        height="403" width="302"
-        srcset="images/Tom_Hartung-headshot-color-576x768.jpg 576w,
-                images/Tom_Hartung-headshot-color-432x576.jpg 432w,
-                images/Tom_Hartung-headshot-color-216x288.jpg 216w"
-        sizes="(min-width: 216px) 50vw, 80vw"
-        layout="responsive">
-      </amp-img>
-    </div><!-- .amp-img -->
-    <h3><b>I am the world's first expert in
-     <a href="https://www.groja.com/" title="Link to the home page at groja.com" target="_blank">visualizing personalities</a>!</b></h3>
-    <h2>Contact:</h2>
-    <p>For business,
-     <a href="https://www.linkedin.com/in/tomhartung" title="Link to my page at linkedin.com" target="_blank">LinkedIn</a> or the
-     <a href="tel:+13038631757">phone</a> (leave a message) are best.</p>
-    <ul>
-     <li><b>Social media:</b><br />
-      <a href="https://github.com/tomwhartung" title="Link to my github page - used almost daily!" target="_blank">
-       <i class="fa fa-github-square" id="fa-github-square"></i></a>
-      <a href="https://www.linkedin.com/in/tomhartung" title="Link to my page on linkedin" target="_blank">
-       <i class="fa fa-linkedin-square" id="fa-linkedin-square"></i></a>
-      <a href="https://medium.com/@tomwhartung" title="Link to the articles I've written on medium.com" target="_blank">
-       <i class="fa fa-medium" id="fa-medium"></i></a>
-      <a href="https://www.facebook.com/tomwhartung" title="Link to my facebook page" target="_blank">
-       <i class="fa fa-facebook-square" id="fa-facebook-square"></i></a>
-      <a href="https://plus.google.com/u/0/+TomHartung" title="Link to my Google+ page" target="_blank">
-       <i class="fa fa-google-plus-square" id="fa-google-plus-square"></i></a>
-      <a href="https://twitter.com/TomWHartung" title="Link to my rarely-used twitter account" target="_blank">
-       <i class="fa fa-twitter-square" id="fa-twitter-square"></i></a>
-     </li>
-     <li><b>Phone:</b><br /><a href="tel:+13038631757">+1-303-863-1757</a><br />
-      Leave a message and I'll get back to you &mdash; I get a ton of junk calls.</li>
-     <li><b>Address:</b><address>
-      <a href="https://maps.google.com/maps?q=2075+Emerson+Street,+Denver+CO+80205"
-         title="Link to bring up a map to my house in a new window" target="_blank">
-      2075 Emerson Street,<br />Denver CO 80205</a></address></li>
-    </ul>
-    <p>For socializing, <a href="tel:+13038631757">calling</a> and leaving a message is quickest,
-     but any of the others will work &mdash; eventually <i class="fa fa-smile-o"></i>.</p>
-    <h2>Other Sites:</h2>
-    <p>This site is minimalistic.  For best results, visit one of my other sites:</p>
-    <ul>
-     <li><a href='https://www.tomwhartung.com' title='Link to the Home page at tomwhartung.com' target='_blank'>tomwhartung.com</a> &mdash;
-      a site with more information than this one</li>
-     <li><a href='https://www.seeourminds.com' title='Link to the Home page at seeourminds.com' target='_blank'>seeourminds.com</a> &mdash;
-      contains a gallery of spiritual portraits and a quiz you can take to learn more</li>
-     <li><a href='https://www.groja.com' title='Link to the Home page at groja.com' target='_blank'>groja.com</a> &mdash;
-      explains a bit about what spiritual portraits (GROJAS) are</li>
-    </ul>
-    <h2>Talks!</h2>
-    <p>I would like to present a talk to your group about how the psychology of the Founding Fathers created issues between them,
-     but ultimately helped them succeed in their mission to create a new type of nation.</p>
-    <p>If you're interested, contact me via one of the sources listed above!</p>
-    <h2>A Quote:</h2>
-    <blockquote>Luminous beings are we, not this crude matter.<br />
-     &nbsp;&mdash;&nbsp;<a href='https://www.youtube.com/watch?v=YEuA5Y_Cc88' title='Link to a video of Yoda saying this, and a bit more, on youtube.com' target='_blank'>Yoda</a>, in
-     <a href='https://www.imdb.com/title/tt0080684/' title='Link to the page for The Empire Strikes Back on imdb.com' target='_blank'>
-        The Empire Strikes Back</a>, 1980.</blockquote>
-    <p>For some deeper quotes, that expand on what Yoda is saying here with great detail and optimism,
-     but were written decades before he told Luke this on the silver screen, see my article on
-     <a href='https://medium.com/' title='Link to the Home page at medium.com' target='_blank'>medium.com</a> entitled
-     <a href='https://medium.com/@tomwhartung/the-prophetic-vision-of-piet-mondrian-part-1-equilibrium-in-art-and-life-c2b7ba006fd5' title='Link to my article entitled The Prophetic Vision of Piet Mondrian, Part 1: Equilibrium in Art and Life at medium.com' target='_blank'>The Prophetic Vision of Piet Mondrian, Part 1: Equilibrium in Art and Life</a>.
-    </p>
-    <footer>
-     Copyright &copy; 2018
-     <a href="http://www.TomWHartung.com" title"TomWHartung.com home page" target="_blank">Tom W. Hartung</a>.
-     All Rights Reserved.
-    </footer>
-  </body>
+  amp-img.grey-placeholder {
+   background-color: grey;
+  }
+  /* Put custom styles here: */
+  body {
+   color: #0F0000;
+   font-family: Arial, Helvetica, sans-serif;
+   margin: 2em 4em 2em 3em;
+   padding: 2em 4em 2em 3em;
+  }
+  h1, h2, h3 {
+   margin: .5em .2em 0 .2em;
+   padding: .5em .2em 0 .2em;
+  }
+  .amp-img {
+   margin: .5em 2em 0 2em;
+   padding: .5em 2em 0 2em;
+  }
+  p {
+   line-height: 1.5em;
+   margin: .5em 2em 0 0;
+   padding: 0 0 0 .6em;
+  }
+  ul {
+   list-style-type: circle;
+   margin: 0;
+   padding: 0;
+  }
+  li {
+   line-height: 1.5em;
+   margin: .3em 2em 0 2em;
+   padding: 0 0 0 .3em;
+  }
+  /* Style all font awesome icons */
+  .fa {
+   padding: .2em;
+   text-align: center;
+   text-decoration: none;
+  }
+  .fa:hover {
+   border-radius: 50%;
+   box-shadow: 0px 0px 5px #000;
+   opacity: 0.7;
+  }
+  .fa-github-square {
+   color: black;
+  }
+  .fa-linkedin-square {
+   color: #0275b5;
+  }
+  .fa-medium {
+   color: black;
+  }
+  .fa-facebook-square {
+   color: #3B5998;
+  }
+  .fa-google-plus-square {
+   color: #DD4B39
+  }
+  .fa-twitter-square {
+   color: #55ACEE;
+  }
+  #fa-github-square, #fa-linkedin-square, #fa-medium,
+  #fa-facebook-square, #fa-google-plus-square, #fa-twitter-square {
+   font-size: 2em;
+  }
+  blockquote {
+   font-size: 1.5em;
+   font-style: italic;
+   line-height: 1.5em;
+   margin: 1.5em 4em 1.5em 4em;
+  }
+  footer {
+   background-color: #C0C0CF;
+   border-radius: 25px;
+   color: #0F0000;
+   margin: 2em .2em 2em .2em;
+   padding: 2em .2em 2em .2em;
+   text-align: center;
+  }
+ </style>
+ <script type="application/ld+json">
+  {
+   "@context": "http://schema.org",
+   "@type": "NewsArticle",
+   "headline": "Open-source framework for publishing content",
+   "datePublished": "2015-10-07T12:02:41Z",
+   "image": [
+     "logo.jpg"
+   ]
+  }
+ </script>
+ <script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
+ <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+ <!-- Add social media icon library -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+ <h1>Hi, I'm Tom!</h1>
+ <div class="amp-img">
+  <amp-img
+    src="images/Tom_Hartung-headshot-bw-864x1152.jpg" alt="A Nice Portrait of Tom H. wearing a blue shirt."
+    height="403" width="302"
+    srcset="images/Tom_Hartung-headshot-color-576x768.jpg 576w,
+            images/Tom_Hartung-headshot-color-432x576.jpg 432w,
+            images/Tom_Hartung-headshot-color-216x288.jpg 216w"
+    sizes="(min-width: 216px) 50vw, 80vw"
+    layout="responsive">
+  </amp-img>
+ </div><!-- .amp-img -->
+ <h3><b>I am the world's first expert in
+  <a href="https://www.groja.com/" title="Link to the home page at groja.com" target="_blank">visualizing personalities</a>!</b></h3>
+ <h2>Contact:</h2>
+ <p>For business,
+  <a href="https://www.linkedin.com/in/tomhartung" title="Link to my page at linkedin.com" target="_blank">LinkedIn</a> or the
+  <a href="tel:+13038631757">phone</a> (leave a message) are best.</p>
+ <ul>
+  <li><b>Social media:</b><br />
+   <a href="https://github.com/tomwhartung" title="Link to my github page - used almost daily!" target="_blank">
+    <i class="fa fa-github-square" id="fa-github-square"></i></a>
+   <a href="https://www.linkedin.com/in/tomhartung" title="Link to my page on linkedin" target="_blank">
+    <i class="fa fa-linkedin-square" id="fa-linkedin-square"></i></a>
+   <a href="https://medium.com/@tomwhartung" title="Link to the articles I've written on medium.com" target="_blank">
+    <i class="fa fa-medium" id="fa-medium"></i></a>
+   <a href="https://www.facebook.com/tomwhartung" title="Link to my facebook page" target="_blank">
+    <i class="fa fa-facebook-square" id="fa-facebook-square"></i></a>
+   <a href="https://plus.google.com/u/0/+TomHartung" title="Link to my Google+ page" target="_blank">
+    <i class="fa fa-google-plus-square" id="fa-google-plus-square"></i></a>
+   <a href="https://twitter.com/TomWHartung" title="Link to my rarely-used twitter account" target="_blank">
+    <i class="fa fa-twitter-square" id="fa-twitter-square"></i></a>
+  </li>
+  <li><b>Phone:</b><br /><a href="tel:+13038631757">+1-303-863-1757</a><br />
+   Leave a message and I'll get back to you &mdash; I get a ton of junk calls.</li>
+  <li><b>Address:</b><address>
+   <a href="https://maps.google.com/maps?q=2075+Emerson+Street,+Denver+CO+80205"
+      title="Link to bring up a map to my house in a new window" target="_blank">
+   2075 Emerson Street,<br />Denver CO 80205</a></address></li>
+ </ul>
+ <p>For socializing, <a href="tel:+13038631757">calling</a> and leaving a message is quickest,
+  but any of the others will work &mdash; eventually <i class="fa fa-smile-o"></i>.</p>
+ <h2>Other Sites:</h2>
+ <p>This site is minimalistic.  For best results, visit one of my other sites:</p>
+ <ul>
+  <li><a href='https://www.tomwhartung.com' title='Link to the Home page at tomwhartung.com' target='_blank'>tomwhartung.com</a> &mdash;
+   a site with more information than this one</li>
+  <li><a href='https://www.seeourminds.com' title='Link to the Home page at seeourminds.com' target='_blank'>seeourminds.com</a> &mdash;
+   contains a gallery of spiritual portraits and a quiz you can take to learn more</li>
+  <li><a href='https://www.groja.com' title='Link to the Home page at groja.com' target='_blank'>groja.com</a> &mdash;
+   explains a bit about what spiritual portraits (GROJAS) are</li>
+ </ul>
+ <h2>Talks!</h2>
+ <p>I would like to present a talk to your group about how the psychology of the Founding Fathers created issues between them,
+  but ultimately helped them succeed in their mission to create a new type of nation.</p>
+ <p>If you're interested, contact me via one of the sources listed above!</p>
+ <h2>A Quote:</h2>
+ <blockquote>Luminous beings are we, not this crude matter.<br />
+  &nbsp;&mdash;&nbsp;<a href='https://www.youtube.com/watch?v=YEuA5Y_Cc88' title='Link to a video of Yoda saying this, and a bit more, on youtube.com' target='_blank'>Yoda</a>, in
+  <a href='https://www.imdb.com/title/tt0080684/' title='Link to the page for The Empire Strikes Back on imdb.com' target='_blank'>
+     The Empire Strikes Back</a>, 1980.</blockquote>
+ <p>For some deeper quotes, that expand on what Yoda is saying here with great detail and optimism,
+  but were written decades before he told Luke this on the silver screen, see my article on
+  <a href='https://medium.com/' title='Link to the Home page at medium.com' target='_blank'>medium.com</a> entitled
+  <a href='https://medium.com/@tomwhartung/the-prophetic-vision-of-piet-mondrian-part-1-equilibrium-in-art-and-life-c2b7ba006fd5' title='Link to my article entitled The Prophetic Vision of Piet Mondrian, Part 1: Equilibrium in Art and Life at medium.com' target='_blank'>The Prophetic Vision of Piet Mondrian, Part 1: Equilibrium in Art and Life</a>.
+ </p>
+ <footer>
+  Copyright &copy; 2018
+  <a href="http://www.TomWHartung.com" title"TomWHartung.com home page" target="_blank">Tom W. Hartung</a>.
+  All Rights Reserved.
+ </footer>
+</body>
 </html>
