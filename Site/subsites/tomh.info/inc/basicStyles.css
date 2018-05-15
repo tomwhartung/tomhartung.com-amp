@@ -1,0 +1,346 @@
+/*
+ * basicStyles.css: OK lets give this CSS idea a try!
+ * --------------------------------------------------
+ * Define the most general styles first, as essentially global defaults
+ * Note: can't seem to get the background-image property to work for the body?
+ *  (Except as an inline style -- see .html file.)
+ *  Tried using a special class, it won't work.  This doesn't work either:
+ *    background: "images/background.jpg" #ffffff repeat-y fixed;
+ */
+body {
+  font-family:           Verdana, Arial, Helvetica, sans-serif;
+  font-size:             12px;
+  background-color:      #ffffff;
+  background-repeat:     repeat;
+  background-attachment: fixed;
+}
+
+/*
+ * Define a few font properties (e.g., font-families) here up front 
+ * ----------------------------------------------------------------
+ * Note: there are more styles (e.g., font-sizes) for h*, p, etc. later in file
+ */
+h1, h2, h3, h4, h5, h6 {
+  font-family: Georgia, Times, serif;
+  text-align:  center;
+}
+h5, h6 {
+  font-variant: small-caps;
+}
+p {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  text-align:  justify;
+}
+table {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+li {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  text-align:  justify;
+}
+blockquote {
+  font-family:  Verdana, Arial, Helvetica, sans-serif;
+  /* font-variant: small-caps; */
+  text-align:   justify;
+}
+
+/*
+ * The basic page design is:
+ * -------------------------
+ * navbar: across top - see navbar styles below
+ * lhsImage: down the Left Hand Side -- use "position: fixed or absolute"
+ *   to remove it from flow -- so text appears below navbar, not below image
+ * content: to right of XXXImage
+ * photos (optional): approx the same width as content but centered
+ * footer: across bottom
+ * Note:
+ *   These are top-level div's,
+ *   Nested divs (e.g., used for solid borders) appear near their relevant styles
+ */
+div.navbar {
+  position: relative; /* in normal flow, offset by top and left */
+  top:      10px;
+  left:     10px;
+}
+div.lhsImage {   /* lhsImage: image on Left Hand Side of content */
+  position:     absolute;
+  top:          185px;
+  left:          30px;
+  border:        #000000 solid 2px;
+  padding-top:    2px;
+  padding-left:   2px;
+  padding-right:  2px;
+  padding-bottom: 2px;
+}
+div.content {
+  position: relative; /* in normal flow, offset by top and left */
+  top:       25px;
+  left:     320px;
+  width:    500px;
+}
+div.footer {
+  position: relative; /* in normal flow, offset by top and left */
+  top:       30px;    /* override if footer appears on top of XXXImage */
+  left:      20px;    /* should match XXXImage's left */
+  width:    800px;    /* (content's left + width) minus this.left */
+}
+div.photos {
+  position: relative; /* in normal flow, offset by top and left */
+  top:       30px;
+  left:     160px;    /* around half of content's left */
+  width:    570px;    /* a little bigger than content's width */
+}
+
+/*
+ * Navbar: styles for tables, table rows, and table data
+ * -----------------------------------------------------
+ * table.navbar:  2 cols, contains the entire thing:
+ *   td.navbarImage on lhs, td.navbarText on right (tomh.info logo above links)
+ * td.navbarText contains table.navbarText
+ *   td.navbarLogo, img.navbarLogo across top,
+ *   td.nbOpts* on 2nd (and optionally 3rd) row(s)
+ * Notes:
+ *   empty classes are for debugging, documentation, and possible future use
+ */
+table.navbar {
+  border:   #000000 solid 2px;
+  /* width:    800px; */
+}
+td.navbarImage {
+  border:       #000000 groove 8px;
+  width:        114px;  /* groja: 19 squares * 6px = 114px */
+  padding-top:    4px;  /* specify padding properties individually */
+  padding-left:   4px;  /* because padding (all-in-one) property */
+  padding-right:  4px;  /* is supported by Netscape only (not IE) */
+  padding-bottom: 4px;
+}
+table.navbarText {
+  width:    690px;
+}
+td.navbarText {
+  border:   #000000 groove 8px;
+}
+td.navbarLogo { }
+img.navbarLogo {        /* use to center logo (width=600px) within navbarText */
+  margin-left:   45px;  /* set to (table.navbarText.width - 600 ) / 2 */
+}
+a.navbarOptions {
+  width: 100%;
+}
+td.nbOptsOneLevel, td.nbOptsTwoLevels {
+  width:      115px;
+  text-align: center;
+}
+td.nbOptsOneLevel {
+  font-size:   22px;
+}
+td.nbOptsTwoLevels {
+  font-size:   18px;
+}
+
+/*
+ * Define text colors and font sizes for h*, p, etc. tags
+ * ------------------------------------------------------
+ * Notes:
+ *   font-family and font-variant set at beginning of file
+ *   colors changed in greenStyles.css, redStyles.css, and yellowStyles.css
+ */
+h1 {
+  color:         #000000;
+  font-size:     28px;
+  margin-top:    21px;
+  margin-bottom:  0px;
+  /*  text-shadow: blue 5px 5px 5px;  */ /* Maybe someday */
+}
+h2 {
+  color:         #000000;
+  font-size:     24px;
+  margin-top:    16px;
+  margin-bottom:  0px;
+}
+h3 {
+  color:         #000000;
+  font-size:     20px;
+  margin-top:    12px;
+  margin-bottom:  0px;
+}
+h4 {
+  color:         #000000;
+  font-size:     16px;
+  margin-top:    10px;
+  margin-bottom:  0px;
+}
+h5 {
+  color:         #000000;
+  font-size:     16px;
+  margin-top:    10px;
+  margin-bottom:  0px;
+}
+h6 {
+  color:         #000000;
+  font-size:     14px;
+  margin-top:    10px;
+  margin-bottom:  0px;
+}
+
+p {
+  color:         #000000;
+  font-size:     14px;
+  margin-top:     8px;
+  margin-bottom:  0px;
+  line-height:   18px;
+}
+img {
+  border: none;
+}
+li {
+  color:          #000000;
+  font-size:      14px;
+  line-height:    18px;
+}
+div.quote {
+  border:         #000000 solid 2px;
+  margin-top:     16px;
+  margin-bottom:   0px;
+  margin-left:    20px;
+  margin-right:   20px;
+}
+blockquote {
+  /* color:          #000000; */
+  color:          #000000;
+  font-size:      16px;
+  line-height:    20px;
+  text-align:     justify;
+  border:         #000000 groove 8px;
+  margin-top:      2px;
+  margin-bottom:   2px;
+  margin-left:     2px;
+  margin-right:    2px;
+  padding-top:     8px;
+  padding-bottom:  8px;
+  padding-left:   10px;
+  padding-right:  10px;
+}
+
+/*
+ * Styles for pages with photo albums: family & personal -> photos
+ * ---------------------------------------------------------------
+ * If you use these, be sure to set div.XXXImage -> position: absolute; !
+ */
+table.photos {
+  color:         #000000;
+  font-size:     14px;
+  margin-top:    20px;
+  margin-bottom: 20px;
+  line-height:   18px;
+  border:        #000000 solid 2px;
+}
+td.photoImg {
+  width:  200px;
+  border: #000000 groove 8px;
+  padding-top:    4px;  /* specify padding properties individually */
+  padding-left:   4px;  /* because padding (all-in-one) property */
+  padding-right:  4px;  /* is supported by Netscape only (not IE) */
+  padding-bottom: 4px;
+}
+td.photoDesc {
+  text-align:     justify;
+  border:         #000000 groove 8px;
+  padding-top:     8px;
+  padding-bottom: 20px;
+  padding-left:   10px;
+  padding-right:  10px;
+}
+/*
+ * Styles for adding a border and caption to the lhs image
+ */
+table.lhsCaptionedImage {
+  width:       200px;
+  border:      #000000 solid 2px;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+td.lhsImage {
+}
+img.lhsImage {
+  border: #000000 groove 8px;
+  padding-top:    4px;  /* specify padding properties individually */
+  padding-left:   4px;  /* because padding (all-in-one) property */
+  padding-right:  4px;  /* is supported by Netscape only (not IE) */
+  padding-bottom: 4px;
+}
+td.lhsCaption {
+  color:          #000000;
+  font-size:      14px;
+  border:         blue groove 8px;
+  padding-top:    10px;
+  padding-bottom: 10px;
+  line-height:    18px;
+  text-align:     center;
+}
+
+/*
+ * These Pseudoclasses are pretty cool (esp. a:hover)
+ */
+a:link {
+/* color:           #000000; */
+   text-decoration: none;   /* turn off distracting underlines */
+}
+a:visited {
+/* color:           #000000; */
+   text-decoration: none;   /* turn off distracting underlines */
+}
+a:hover {
+/* color:           #000000; */
+   font-variant:    small-caps;
+   font-weight:     bold;
+   text-decoration: underline;
+}
+a:active {
+  color:       #ffffff;
+  font-weight: bold;
+}
+
+/*
+ * Misc styles: getting down to the finer points now
+ * -------------------------------------------------
+ */
+hr {
+  color:      #000000;
+  margin-top: 10px;
+}
+
+p.centered {
+  text-align:   center;
+}
+div.counter {
+  margin-top:     20px;
+  margin-bottom:  20px;
+  margin-left:    80px;
+  margin-right:   80px;
+  border:         #000000 solid 2px;
+}
+p.counter {
+  color:          #000000;
+  font-size:      24px;
+  font-variant:   small-caps;
+  font-weight:    bold;
+  line-height:    48px;
+  text-align:     center;
+  margin-top:      2px;
+  margin-bottom:   2px;
+  margin-left:     2px;
+  margin-right:    2px;
+  border:         #000000 groove 8px;
+  padding-top:     8px;
+  padding-bottom: 20px;
+  padding-left:   10px;
+  padding-right:  10px;
+}
+
+address.footer {
+  font-size: 10px;
+  text-align: center;
+}
+table.footer {
+  font-size: 10px;
+}

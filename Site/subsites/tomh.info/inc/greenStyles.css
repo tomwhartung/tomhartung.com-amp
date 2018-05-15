@@ -1,0 +1,85 @@
+/*
+ * greenStyles.css: change color of all elements to green
+ * ------------------------------------------------------
+ * Notes:
+ *   This sheet overrides the styles set in the basicStyles.css sheet
+ *     therefore import this *after* importing basicStyles.css
+ */
+div.lhsImage {
+  border:   #008800 solid 2px;
+}
+table.navbar {
+  border:   #008800 solid 2px;
+}
+td.navbarImage {
+  border:   #008800 groove 8px;
+}
+td.navbarText {
+  border:   #008800 groove 8px;
+}
+
+h1 {
+  color: #008800;
+}
+h2 {
+  color: #118811;
+}
+h3 {
+  color: #228822;
+}
+h4 {
+  color: #338833;
+}
+h5 {
+  color: #448844;
+}
+h6 {
+  color: #558855;
+}
+img.lhsImage {
+   border: #008800 groove 8px;
+}
+
+a:link {
+  color: #008800;
+}
+a:visited {
+  color: #005500;
+}
+a:hover {          /* for color to work must put hover after visited */
+  color: #008800;
+}
+hr {
+  color: #008800;
+}
+div.quote {
+  border-color: #008800;
+}
+blockquote {
+  /* color:        #008800; */
+  border-color: #008800;
+}
+div.counter {
+  border-color: #008800;
+}
+p.counter {
+  border-color: #008800;
+}
+table.photos {
+  border-color: #008800;
+}
+td.photoImg {
+  border-color: #008800;
+}
+td.photoDesc {
+  border-color: #008800;
+}
+table.lhsCaptionedImage {
+  border-color: #008800;
+}
+td.lhsImage {
+  border-color: #008800;
+}
+td.lhsCaption {
+  border-color: #008800;
+}
