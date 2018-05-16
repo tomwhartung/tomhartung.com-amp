@@ -1,0 +1,87 @@
+/*
+ * blackStyles.css: change color of all elements to black
+ * ------------------------------------------------------
+ * Notes:
+ *   This sheet overrides the styles set in the basicStyles.css sheet
+ *     therefore import this *after* importing basicStyles.css
+ *   Currently this sheet is used only on the resume so a lot of these
+ *     styles (e.g. lhsImage, etc.) are irrelevant
+ */
+div.lhsImage {
+  border:   #000000 solid 2px;
+}
+table.navbar {
+  border:   #000000 solid 2px;
+}
+td.navbarImage {
+  border:   #000000 groove 8px;
+}
+td.navbarText {
+  border:   #000000 groove 8px;
+}
+
+h1 {
+  color: #000000;
+}
+h2 {
+  color: #000000;
+}
+h3 {
+  color: #000000;
+}
+h4 {
+  color: #000000;
+}
+h5 {
+  color: #000000;
+}
+h6 {
+  color: #000000;
+}
+img.lhsImage {
+   border: #000000 groove 8px;
+}
+
+a:link {
+  color: #000000;
+}
+a:visited {
+  color: #000000;
+}
+a:hover {          /* for color to work must put hover after visited */
+  color: #000000;
+}
+hr {
+  color: #000000;
+}
+div.quote {
+  border-color: #000000;
+}
+blockquote {
+  /* color:        #000000; */
+  border-color: #000000;
+}
+div.counter {
+  border-color: #000000;
+}
+p.counter {
+  border-color: #000000;
+}
+table.photos {
+  border-color: #000000;
+}
+td.photoImg {
+  border-color: #000000;
+}
+td.photoDesc {
+  border-color: #000000;
+}
+table.lhsCaptionedImage {
+  border-color: #000000;
+}
+td.lhsImage {
+  border-color: #000000;
+}
+td.lhsCaption {
+  border-color: #000000;
+}

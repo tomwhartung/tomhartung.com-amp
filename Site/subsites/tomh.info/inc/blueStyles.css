@@ -1,0 +1,85 @@
+/*
+ * blueStyles.css: change color of all elements to blue
+ * ----------------------------------------------------
+ * Notes:
+ *   This sheet overrides the styles set in the basicStyles.css sheet
+ *     therefore import this *after* importing basicStyles.css
+ */
+div.lhsImage {
+  border:   #0000ff solid 2px;
+}
+table.navbar {
+  border:   #0000ff solid 2px;
+}
+td.navbarImage {
+  border:   #0000ff groove 8px;
+}
+td.navbarText {
+  border:   #0000ff groove 8px;
+}
+
+h1 {
+  color: #0000ff;
+}
+h2 {
+  color: #1111ff;
+}
+h3 {
+  color: #2222ff;
+}
+h4 {
+  color: #3333ff;
+}
+h5 {
+  color: #4444ff;
+}
+h6 {
+  color: #5555ff;
+}
+img.lhsImage {
+   border: #0000ff groove 8px;
+}
+
+a:link {
+  color: #0000ff;
+}
+a:visited {
+  color: #0000bb;
+}
+a:hover {          /* for color to work must put hover after visited */
+  color: #0000ff;
+}
+hr {
+  color: #2222ff;
+}
+div.quote {
+  border-color: #0000ff;
+}
+blockquote {
+  /* color:        #0000ff; */
+  border-color: #0000ff;
+}
+div.counter {
+  border-color: #0000ff;
+}
+p.counter {
+  border-color: #0000ff;
+}
+table.photos {
+  border-color: #0000ff;
+}
+td.photoImg {
+  border-color: #0000ff;
+}
+td.photoDesc {
+  border-color: #0000ff;
+}
+table.lhsCaptionedImage {
+  border-color: #0000ff;
+}
+td.lhsImage {
+  border-color: #0000ff;
+}
+td.lhsCaption {
+  border-color: #0000ff;
+}

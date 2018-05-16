@@ -1,0 +1,90 @@
+/*
+ * yellowStyles.css: change color of all elements to yellow
+ * --------------------------------------------------------
+ * Notes:
+ *   This sheet overrides the styles set in the basicStyles.css sheet
+ *     therefore import this *after* importing basicStyles.css
+ */
+div.lhsImage {
+  border:   #cccc00 solid 2px;
+}
+table.navbar {
+  border:   #cccc00 solid 2px;
+}
+td.navbarImage {
+  border:   #cccc00 groove 8px;
+}
+td.navbarText {
+  border:   #cccc00 groove 8px;
+}
+
+/* Note: we are not "fading out" higher-level headings for yellow
+ * as we do with red, green, and blue
+ * If it gets too dark, it's no longer yellow.
+ * If it gets too light, it's impossible to read.
+ */
+h1 {
+  color: #cccc00;
+}
+h2 {
+  color: #cccc00;
+}
+h3 {
+  color: #cccc00;
+}
+h4 {
+  color: #cccc00;
+}
+h5 {
+  color: #cccc00;
+}
+h6 {
+  color: #cccc00;
+}
+img.lhsImage {
+   border: #aaaa00 groove 8px;
+}
+
+a:link {              /* a little darker because links are mixed in w/ text */
+  color: #aaaa00;
+}
+a:visited {
+  color: #777700;
+}
+a:hover {          /* for color to work must put hover after visited */
+  color: #aaaa00;
+}
+hr {
+  color: #cccc00;
+}
+div.quote {
+  border-color: #cccc00;
+}
+blockquote {
+  /* color:        #888800; */
+  border-color: #cccc00;
+}
+div.counter {
+  border-color: #cccc00;
+}
+p.counter {
+  border-color: #cccc00;
+}
+table.photos {
+  border-color: #cccc00;
+}
+td.photoImg {
+  border-color: #cccc00;
+}
+td.photoDesc {
+  border-color: #cccc00;
+}
+table.lhsCaptionedImage {
+  border-color: #cccc00;
+}
+td.lhsImage {
+  border-color: #cccc00;
+}
+td.lhsCaption {
+  border-color: #cccc00;
+}

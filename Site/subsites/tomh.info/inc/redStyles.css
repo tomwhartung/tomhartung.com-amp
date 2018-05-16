@@ -1,0 +1,85 @@
+/*
+ * redStyles.css: change color of all elements to red
+ * --------------------------------------------------
+ * Notes:
+ *   This sheet overrides the styles set in the basicStyles.css sheet
+ *     therefore import this *after* importing basicStyles.css
+ */
+div.lhsImage {
+  border:   #f00 solid 2px;
+}
+table.navbar {
+  border:   #f00 solid 2px;
+}
+td.navbarImage {
+  border:   #f00 groove 8px;
+}
+td.navbarText {
+  border:   #f00 groove 8px;
+}
+
+h1 {
+  color: #ff0000;
+}
+h2 {
+  color: #ff1111;
+}
+h3 {
+  color: #ff2222;
+}
+h4 {
+  color: #ff3333;
+}
+h5 {
+  color: #ff4444;
+}
+h6 {
+  color: #ff5555;
+}
+img.lhsImage {
+   border: #ff0000 groove 8px;
+}
+
+a:link {
+  color: #ff0000;
+}
+a:visited {
+  color: #bb0000;
+}
+a:hover {          /* for color to work must put hover after visited */
+  color: #ff0000;
+}
+hr {
+  color: #ff0000;
+}
+div.quote {
+  border-color: #ff0000;
+}
+blockquote {
+  /* color:        #ff0000; */
+  border-color: #ff0000;
+}
+div.counter {
+  border-color: #ff0000;
+}
+p.counter {
+  border-color: #ff0000;
+}
+table.photos {
+  border-color: #ff0000;
+}
+td.photoImg {
+  border-color: #ff0000;
+}
+td.photoDesc {
+  border-color: #ff0000;
+}
+table.lhsCaptionedImage {
+  border-color: #ff0000;
+}
+td.lhsImage {
+  border-color: #ff0000;
+}
+td.lhsCaption {
+  border-color: #ff0000;
+}
