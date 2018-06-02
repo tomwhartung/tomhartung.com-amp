@@ -9,12 +9,13 @@
     '<html>' . "\n"
   );
 
+  print( '<head>' . "\n");
+  include_once( '../google_analytics.php' );
   print(
-    '<head>' . "\n" .
     '<base_target="_top">' . "\n" .
     '<title>' . $title . '</title>' . "\n"
   );
-
+  //
   // I can't decide which icon to use so we'll let the computer decide:
   //
   $randomDecmal123  = rand( 0.5, 3.4999 );        // rounds to 1, 2, or 3
@@ -87,5 +88,4 @@
   }
 
   print( ">\n" );
-  include_once( '../google_analytics.php' );
 ?>
