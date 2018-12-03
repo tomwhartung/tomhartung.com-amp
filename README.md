@@ -10,3 +10,9 @@ Following are the "standard" subsites - in `Sites/subsites` - of this site:
 - `resume` - link only to `/var/www/subsites/resume`
 - `idMyGadget` - link only to `/var/www/subsites/idMyGadget`
 
+# Conversion to Flask
+
+Thinking we should make this another python site, specifically:
+
+- Use Flask and MDL or MUI
+
